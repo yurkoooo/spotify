@@ -1,0 +1,55 @@
+body {
+    font-family:'Poppins', sans-serif;
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hdr__logo {
+    width: 76px;
+    height: 23px;
+}
+
+.title {
+    background-color: #EEF2FF;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 57px;
+}
+
+.title p {
+    font-size: 15px;
+    margin-bottom: 34px;
+}
+
+.title button {
+    background-color: #E44590;
+    border-radius: 32px;
+    border: 0;
+    color: white;
+    width: 200px;
+    height: 64px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.title button:hover {
+    background-color: white;
+    color: #E44590;
+}
+
+.title img {
+    height: 250px;
+}
+
+button {
+    cursor: pointer;
+}

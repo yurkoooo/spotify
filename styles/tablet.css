@@ -1,0 +1,70 @@
+ @media (min-width: 640px) {
+     .container {
+         width: 604px;
+         margin: 0 auto;
+     }
+
+     .hdr__logo {
+        width: 100px;
+        height: 30px;
+     }
+
+     .hdr__main {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     nav {
+         display: block;
+     }
+
+     .hdr__signUpBtn {
+        background: none;
+        border: 0;
+        font-size: 16px;
+        margin-right: 15px;
+        transition: opacity 0.3s ease-in-out;
+     }
+
+     .hdr__signUpBtn:hover {
+        opacity: 0.7;
+     }
+
+     .hdr__signInBtn {
+        background-color: black;
+        border: 0;
+        color: white;
+        border-radius: 32px;
+        width: 132px;
+        height: 44px;         
+        transition: background-color 0.3s ease-in-out;
+     }
+
+     .hdr__signInBtn:hover {
+        background-color: lightgreen;
+     }
+
+     .title__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+     .title__mainElements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .title h1 {
+         margin-bottom: 20px;
+     }
+
+     .title img {
+        height: 217px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+ }

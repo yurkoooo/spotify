@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+
+    .title__mainElements {
+        align-items: self-end;
+        }
+
+    .title__mainElements span {
+        padding-left: 175px;
+    }
+
+    .title__mainElements h1 {
+        font-size: 73px;
+    }
+
+    .title__mainElements p {
+        font-size: 17px;
+    }
+
+    .title img {
+        height: 270px;
+    }
+}
