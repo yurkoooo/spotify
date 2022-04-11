@@ -33,16 +33,17 @@
 
      .hdr__signInBtn {
         background-color: black;
-        border: 0;
+        border: 2px solid black;
         color: white;
         border-radius: 32px;
         width: 132px;
         height: 44px;         
-        transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
      }
 
      .hdr__signInBtn:hover {
-        background-color: lightgreen;
+        background-color: white;
+        color: black;
      }
 
      .title__main {
