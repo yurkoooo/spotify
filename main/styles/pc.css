@@ -1,5 +1,32 @@
-@media (min-width 1240px) {
+@media (min-width: 1240px) {
     .container {
         min-width: 1200px;
+    }
+    
+    .hdr__logo {
+        width: 145px;
+        height: 44px;
+    }
+
+    .hdr__signInBtn {
+        width: 151px;
+        height: 60px;п
+    }
+
+    .title__mainElements h1 {
+        font-size: 100px;
+    }
+
+    .title__mainElements p {
+        font-size: 22px;
+    }
+
+    .title__mainElements button {
+        width: 230px;
+        height: 68px;
+    }
+
+    .title img {
+        height: 360px;
     }
 }
