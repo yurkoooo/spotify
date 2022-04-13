@@ -1,55 +1,67 @@
-body {
+@import url(./tablet.css);
+@import url(./desktop.css);
+@import url(./largeDesktop.css); 
+
+@media (max-width: 639px) {
+    nav {
+        display: none;
+    }
+
+    .hdr__logo {
+        height: 23px;
+    }
+    
+    .banner h1 {
+        font-size: 57px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .banner button {
+        width: 200px;
+        height: 64px;
+    }
+
+    .banner img {
+        height: 250px;
+     }
+ }
+
+ body {
     font-family:'Poppins', sans-serif;
-}
+ }
 
-nav {
-    display: none;
-}
-
-.container {
+ .container {
     padding: 20px;
-}
+ }
 
-.hdr__logo {
-    width: 76px;
-    height: 23px;
-}
-
-.title {
+ .banner {
     background-color: #EEF2FF;
     text-align: center;
-}
+ }
 
-.title h1 {
-    font-size: 57px;
-}
-
-.title p {
-    font-size: 15px;
+ .banner p {
     margin-bottom: 34px;
-}
+ }
 
-.title button {
+ .banner button {
     background-color: #E44590;
     border-radius: 32px;
     border: 2px solid #E44590;
     color: white;
-    width: 200px;
-    height: 64px;
     margin-bottom: 30px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     font-weight: 800;
-}
+ }
 
-.title button:hover {
+ .banner button:hover {
     background-color: white;
     color: #E44590;
-}
+ }
 
-.title img {
-    height: 250px;
-}
-
-button {
+ button {
     cursor: pointer;
-}
+ }
+

@@ -1,25 +1,42 @@
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .container {
-        width: 940px;
+        width: 980px;
     }
 
-    .title__mainElements {
-        align-items: self-end;
-        }
-
-    .title__mainElements span {
-        padding-left: 175px;
+    .hdr__logo {
+        height: 40px;
     }
+    
+    .hdr__signInBtn {
+        width: 150px;
+        height: 50px;
+     }
 
-    .title__mainElements h1 {
+    .banner__mainElements h1 {
         font-size: 73px;
     }
 
-    .title__mainElements p {
+    .banner__mainElements p {
         font-size: 17px;
     }
-
-    .title img {
+    
+    .banner img {
         height: 270px;
+    }
+    
+    .banner button {
+        width: 230px;
+        height: 75px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .banner__mainElements {
+        align-items: self-end;
+        }
+
+    .banner__mainElements span {
+        padding-left: 175px;
     }
 }

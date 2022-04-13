@@ -1,22 +1,40 @@
- @media (min-width: 640px) {
-     .container {
-         width: 604px;
-         margin: 0 auto;
-     }
+@media (min-width: 640px) and (max-width: 991px) {
+   .container {
+      width: 650px;
+   }
 
-     .hdr__logo {
-        width: 100px;
-        height: 30px;
+   .hdr__logo {
+      height: 33px;
+   }
+
+   .hdr__signInBtn {
+      width: 132px;
+      height: 44px;
+   }
+
+   .banner h1 {
+      font-size: 65px;
+   }
+
+   .banner button {
+      width: 215px;
+      height: 65px;
+   }
+
+   .banner img {
+      height: 245px;
+   }
+}
+
+@media (min-width: 640px) {
+     .container {
+         margin: 0 auto;
      }
 
      .hdr__main {
          display: flex;
          justify-content: space-between;
          align-items: center;
-     }
-
-     nav {
-         display: block;
      }
 
      .hdr__signUpBtn {
@@ -35,9 +53,7 @@
         background-color: black;
         border: 2px solid black;
         color: white;
-        border-radius: 32px;
-        width: 132px;
-        height: 44px;         
+        border-radius: 32px;        
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
      }
 
@@ -46,24 +62,23 @@
         color: black;
      }
 
-     .title__main {
+     .banner__main {
         display: flex;
         align-items: center;
         justify-content: space-between;
      }
 
-     .title__mainElements {
+     .banner__mainElements {
         display: flex;
         flex-direction: column;
         align-items: center;
      }
 
-     .title h1 {
+     .banner h1 {
          margin-bottom: 20px;
      }
 
-     .title img {
-        height: 217px;
+     .banner img {
         display: flex;
         flex-direction: column;
         justify-content: center;
