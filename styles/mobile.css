@@ -1,6 +1,6 @@
-@import url(./tablet.css);
-@import url(./desktop.css);
-@import url(./largeDesktop.css); 
+@import url('tablet.css');
+@import url('desktop.css');
+@import url('largeDesktop.css'); 
 
 @media (max-width: 639px) {
     nav {
