@@ -10,6 +10,11 @@
     .hdr__signInBtn {
         width: 180px;
         height: 65px;
+        font-size: 21px;
+    }
+
+    .hdr__signUpBtn {
+        font-size: 21px;
     }
 
     .banner__mainElements h1 {
