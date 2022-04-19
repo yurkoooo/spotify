@@ -34,6 +34,13 @@
         height: 60px;
         font-size: 18px;
     }
+
+    .video iframe {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 600px;
+        height: 325px;
+     }
 }
 
 @media (min-width: 992px) {

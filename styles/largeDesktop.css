@@ -34,4 +34,11 @@
     .banner img {
         height: 360px;
     }
+
+    .video iframe {
+        margin-top: 65px;
+        margin-bottom: 65px;
+        width: 764px;
+        height: 459px;
+     }
 }

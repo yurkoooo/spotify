@@ -48,7 +48,16 @@
     height: auto;
  }
 
+ .video {
+    display: flex;
+    justify-content: center;
+    background-color: #DAF2F1;
+ }
 
+ .video iframe {
+    border: 0;
+    border-radius: 6px;
+ }
 
 
  @media (max-width: 639px) {
@@ -97,5 +106,12 @@
    .partners__walmart {
       width: 31vw;
       padding-left: 20px;
+   }
+
+   .video iframe {
+      width: 321px;
+      height: 190px;
+      margin-top: 55px;
+      margin-bottom: 55px;
    }
 }

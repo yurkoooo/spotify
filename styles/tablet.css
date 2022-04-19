@@ -50,6 +50,13 @@
       width: 145px;
    }
 
+   .video iframe {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      width: 460px;
+      height: 280px;
+   }
+
 }
 
 @media (min-width: 640px) {
