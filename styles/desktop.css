@@ -30,8 +30,9 @@
     }
     
     .banner button {
-        width: 230px;
-        height: 75px;
+        width: 195px;
+        height: 60px;
+        font-size: 18px;
     }
 }
 
@@ -43,5 +44,21 @@
 
     .banner__mainElements span {
         padding-left: 175px;
+    }
+
+    .partners__apple {
+        width: 5vw;
+    }
+
+    .partners__amazon {
+        width: 12vw;
+    }
+
+    .partners__google {
+        width: 13vw;
+    }
+
+    .partners__walmart {
+        width: 18vw;
     }
 }

@@ -26,13 +26,30 @@
    }
 
    .banner button {
-      width: 215px;
-      height: 65px;
+      width: 180px;
+      height: 60px;
    }
 
    .banner img {
       height: 245px;
    }
+
+   .partners__apple {
+      width: 37px;
+   }
+
+   .partners__amazon {
+      width: 100px;
+   }
+
+   .partners__google {
+      width: 100px;
+   }
+
+   .partners__walmart {
+      width: 145px;
+   }
+
 }
 
 @media (min-width: 640px) {
@@ -90,4 +107,19 @@
         flex-direction: column;
         justify-content: center;
      }
+
+     .partners__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+
+     .partners img {
+        padding-right: 70px;
+     }
+
+     .partners__mainImages {
+      display: flex;
+      justify-content: center;
+  }
  }

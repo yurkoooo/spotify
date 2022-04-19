@@ -39,6 +39,17 @@
     cursor: pointer;
  }
 
+ .partners {
+   display: flex;
+   justify-content: center;
+}
+
+ .partners img {
+    height: auto;
+ }
+
+
+
 
  @media (max-width: 639px) {
    nav {
@@ -46,7 +57,7 @@
    }
 
    .hdr__logo {
-       height: 23px;
+       height: 30px;
    }
    
    .banner h1 {
@@ -54,15 +65,37 @@
    }
 
    .banner p {
-       font-size: 15px;
+       font-size: 17px;
    }
 
    .banner button {
-       width: 200px;
-       height: 64px;
+       width: 180px;
+       height: 60px;
    }
 
    .banner img {
        height: 250px;
     }
+
+    .partners__mainImages {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .partners__apple {
+      width: 8vw;
+   }
+  
+   .partners__amazon {
+      width: 22vw;
+   }
+  
+   .partners__google {
+      width: 22vw;
+   }
+  
+   .partners__walmart {
+      width: 31vw;
+      padding-left: 20px;
+   }
 }
