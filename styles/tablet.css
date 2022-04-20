@@ -62,11 +62,6 @@
       width: 200px;
    }
 
-   .feature__circle {
-      width: 49px;
-      height: 49px;
-   }
-
    .feature__main h2 {
       font-size: 18px;
    }
@@ -74,6 +69,11 @@
    .feature__main p {
       font-size: 11px;
    }
+
+   .feature__main img {
+      width: 64px;
+      height: 64px;
+    }
 
 }
 

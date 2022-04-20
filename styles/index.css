@@ -63,12 +63,6 @@
     margin-top: 20px;
 }
 
- .feature__circle {
-    border: 3px solid seagreen;
-    border-radius: 50%;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,80,1) 100%);
- }
-
  .feature__main p {
     text-align: center;
  }
@@ -149,8 +143,8 @@
       font-size: 14px;
    }
 
-   .feature__circle {
-      width: 64px;
-      height: 64px;
-   }
+   .feature__main img {
+      width: 90px;
+      height: 90px;
+    }
 }

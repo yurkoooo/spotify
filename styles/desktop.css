@@ -49,6 +49,11 @@
      .feature__main p {
         font-size: 13px;
      }
+
+     .feature__main img {
+        width: 90px;
+        height: 90px;
+      }
 }
 
 @media (min-width: 992px) {
@@ -77,8 +82,4 @@
         width: 18vw;
     }
     
-    .feature__circle {
-        width: 64px;
-        height: 64px;
-    }
 }
