@@ -59,6 +59,24 @@
     border-radius: 6px;
  }
 
+ .feature { 
+    margin-top: 20px;
+}
+
+ .feature__circle {
+    border: 3px solid seagreen;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,80,1) 100%);
+ }
+
+ .feature__main p {
+    text-align: center;
+ }
+
+ .feature__main h2 {
+    margin-bottom: 10px;
+ }
+
 
  @media (max-width: 639px) {
    nav {
@@ -113,5 +131,26 @@
       height: 190px;
       margin-top: 55px;
       margin-bottom: 55px;
+   }
+
+   .feature__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+ 
+   }
+
+   .feature__main h2 {
+      font-size: 26px;
+   }
+
+   .feature__main p {
+      font-size: 14px;
+   }
+
+   .feature__circle {
+      width: 64px;
+      height: 64px;
    }
 }

@@ -57,6 +57,24 @@
       height: 280px;
    }
 
+   .feature__main {
+      margin-right: 16px;
+      width: 200px;
+   }
+
+   .feature__circle {
+      width: 49px;
+      height: 49px;
+   }
+
+   .feature__main h2 {
+      font-size: 18px;
+   }
+
+   .feature__main p {
+      font-size: 11px;
+   }
+
 }
 
 @media (min-width: 640px) {
@@ -126,7 +144,18 @@
      }
 
      .partners__mainImages {
-      display: flex;
-      justify-content: center;
-  }
+        display: flex;
+        justify-content: center;
+     }
+
+     .feature {
+        display: flex;
+        justify-content: center;
+     }
+
+      .feature__main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
  }

@@ -41,6 +41,14 @@
         width: 600px;
         height: 325px;
      }
+
+     .feature__main {
+         margin-right: 17px;
+     }
+
+     .feature__main p {
+        font-size: 13px;
+     }
 }
 
 @media (min-width: 992px) {
@@ -67,5 +75,10 @@
 
     .partners__walmart {
         width: 18vw;
+    }
+    
+    .feature__circle {
+        width: 64px;
+        height: 64px;
     }
 }
