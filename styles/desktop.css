@@ -42,8 +42,13 @@
         height: 325px;
      }
 
+     .feature {
+        margin-top: 80px;
+        margin-bottom: 80px;
+     }
+
      .feature__main {
-         margin-right: 17px;
+        margin-right: 17px;
      }
 
      .feature__main p {
@@ -53,6 +58,26 @@
      .feature__main img {
         width: 90px;
         height: 90px;
+      }
+
+      .quote__description {
+        margin-bottom: 39px;
+        font-size: 22px;
+        max-width: 650px;
+      }
+
+      .quote__main {
+        margin-right: 430px;
+      }
+
+      .quote__main img {
+        width: 110px;
+        height: 110px;
+      }
+
+      .quote__main p {
+        font-size: 19px;
+        padding-left: 16px;
       }
 }
 
@@ -82,4 +107,8 @@
         width: 18vw;
     }
     
+    .quote {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }

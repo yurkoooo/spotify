@@ -57,6 +57,11 @@
       height: 280px;
    }
 
+   .feature { 
+      margin-top: 60px;
+      margin-bottom: 60px;
+   }
+
    .feature__main {
       margin-right: 16px;
       width: 200px;
@@ -73,8 +78,35 @@
    .feature__main img {
       width: 64px;
       height: 64px;
-    }
+   }
 
+   .quote__description {
+      max-width: 500px;
+      font-size: 19px
+   }
+
+   .quote {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .quote img {
+      width: 80px;
+      height: 80px;
+   }
+
+   .quote__description {
+      margin-bottom: 40px;
+   }
+
+   .quote__main {
+      margin-right: 320px;    
+   }
+
+   .quote__main p {
+      font-size: 17px;
+      padding-left: 15px;
+   }
 }
 
 @media (min-width: 640px) {
@@ -153,7 +185,7 @@
         justify-content: center;
      }
 
-      .feature__main {
+     .feature__main {
          display: flex;
          flex-direction: column;
          align-items: center;

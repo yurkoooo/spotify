@@ -42,21 +42,45 @@
         height: 459px;
      }
 
-     .feature__main {
-         margin-right: 35px;
+    .feature {
+        margin-top: 100px;
+        margin-bottom: 100px;
      }
 
-     .feature__main h2 {
-         font-size: 26px;
+    .feature__main {
+        margin-right: 35px;
      }
 
-     .feature__main p {
+    .feature__main h2 {
+        font-size: 26px;
+     }
+
+    .feature__main p {
         font-size: 15px;
      }
 
-     .feature__main img {
+    .feature__main img {
         width: 100px;
         height: 100px;
-      }
+     }
 
+    .quote__description {
+        font-size: 25px;
+        margin-bottom: 50px;
+        max-width: 800px;
+     }
+
+    .quote__main {
+        margin-right: 500px;
+     }
+
+    .quote__main img {
+        width: 140px;
+        height: 140px;
+     } 
+    
+    .quote__main p {
+        padding-left: 27px;
+        font-size: 22px;
+     }
 }
