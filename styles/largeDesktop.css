@@ -68,6 +68,7 @@
         font-size: 25px;
         margin-bottom: 50px;
         max-width: 800px;
+        line-height: 40px;
      }
 
     .quote__main {
@@ -83,4 +84,14 @@
         padding-left: 27px;
         font-size: 22px;
      }
+
+    .support__heading {
+        font-size: 60px;
+     }
+    
+    .support__description {
+        font-size: 23px;
+        line-height: 45px;
+        margin-bottom: 35px;
+    }
 }

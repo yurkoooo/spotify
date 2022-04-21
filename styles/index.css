@@ -87,6 +87,37 @@
    align-items: center;
  }
 
+ .support {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #EEF2FF;
+ }
+
+ .support p {
+   text-align: center;
+ }
+
+ .support__heading {
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+
+ .support button {
+   border-radius: 32px;
+   width: 200px;
+   height: 64px;
+   border: 2px solid #E44590;
+   color: white;
+   background-color: #E44590;
+   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+   font-size: 18px;
+ }
+
+ .support button:hover {
+   background-color: white;
+   color: #E44590;
+ }
 
  @media (max-width: 639px) {
    nav {
@@ -114,80 +145,98 @@
        height: 250px;
     }
 
-    .partners__mainImages {
-      display: flex;
-      justify-content: space-evenly;
+   .partners__mainImages {
+       display: flex;
+       justify-content: space-evenly;
     }
 
-    .partners__apple {
-      width: 8vw;
+   .partners__apple {
+       width: 8vw;
    }
   
    .partners__amazon {
-      width: 22vw;
+       width: 22vw;
    }
   
    .partners__google {
-      width: 22vw;
+       width: 22vw;
    }
   
    .partners__walmart {
-      width: 31vw;
-      padding-left: 20px;
+       width: 31vw;
+       padding-left: 20px;
    }
 
    .video iframe {
-      width: 268px;
-      height: 181px;
-      margin-top: 55px;
-      margin-bottom: 55px;
+       width: 268px;
+       height: 181px;
+       margin-top: 55px;
+       margin-bottom: 55px;
    }
 
    .feature {
-      margin-top: 20px;
-      margin-bottom: 60px;
+       margin-top: 20px;
+       margin-bottom: 60px;
    }
 
    .feature__main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 70px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 70px;
  
    }
 
    .feature__main h2 {
-      font-size: 26px;
+       font-size: 26px;
    }
 
    .feature__main p {
-      font-size: 14px;
+       font-size: 14px;
    }
 
    .feature__main img {
-      width: 90px;
-      height: 90px;
+       width: 90px;
+       height: 90px;
     }
 
    .quote {
-      padding-top: 60px;
-      padding-bottom: 20px;
+       padding-top: 60px;
+       padding-bottom: 20px;
     }
 
    .quote img {
-      margin-bottom: 30px;
-      width: 280px;
-      height: 280px;
-      order: 1;
+       margin-bottom: 30px;
+       width: 280px;
+       height: 280px;
+       order: 1;
     }
 
    .quote p {
-      font-size: 18px;
-      max-width: 442px;
-      order: 2;
+       font-size: 18px;
+       max-width: 442px;
+       order: 2;
+    }
+
+    .quote__description {
+       line-height: 25px;
     }
 
    .quote__main {
-      flex-direction: column;
+       flex-direction: column;
+   }
+
+   .support {
+       padding: 50px 0;
+   }
+
+   .support__heading {
+       font-size: 35px;
+       max-width: 307px;
+   }  
+
+   .support__description {
+       font-size: 16px;
+       line-height: 25px;
    }
 }
