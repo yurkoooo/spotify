@@ -16,10 +16,14 @@
         <div class="container">
             <div class="hdr__main">
                 <img src="./static/images/spotifyLogo.png" alt="spotify logo" class="hdr__logo">
-                <nav>
-                    <button class="hdr__signUpBtn"> Sign Up </button>
-                    <button class="hdr__signInBtn"> Sign In </button>
-                </nav>
+                <input id="hdr__menuToggle" type="checkbox">
+                <label class='hdr__menuBtnContainer' for="hdr__menuToggle">
+                <div class='hdr__menuBtn'></div>
+              </label>
+                <ul class="hdr__menu">
+                  <li class="hdr__signUpBtn">Sign Up</li>
+                  <li class="hdr__signInBtn">Sign In</li>
+                </ul>
             </div>
         </div>
     </header>
@@ -91,6 +95,26 @@
             </p>
             <button>Support</button>
         </section>
+    <!-- <footer>
+        <div class="footer__main">
+            <img src="./static/images/spotifyIcon.png" alt="spotify icon">
+            <p>Updates right to your Inbox</p>
+            <form action="#">
+                <input type="text" placeholder="Email Adress">
+                <button>Subscribe</button>
+            </form>
+            <p>Spotify 2022</p>
+            <p>Privacy policy</p>
+            <p>Cookies</p>
+        </div>
+        <div class="footer__other">
+            <ul> Company
+                <li>About</li>
+                <li>For the Record</li>
+            </ul>
+
+        </div>
+    </footer>     -->
     </main>
 </body>
 </html>

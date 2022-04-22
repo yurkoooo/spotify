@@ -134,9 +134,14 @@
          align-items: center;
      }
 
+     .hdr__menu {
+        align-items: center;
+     }
+
      .hdr__signUpBtn {
         background: none;
         border: 0;
+        cursor: pointer;
         margin-right: 15px;
         transition: opacity 0.3s ease-in-out;
      }
@@ -146,6 +151,10 @@
      }
 
      .hdr__signInBtn {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
         background-color: black;
         border: 2px solid black;
         color: white;
