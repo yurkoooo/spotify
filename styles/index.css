@@ -3,6 +3,18 @@
 @import url('../styles/largeDesktop.css'); 
 @import url('../styles/normalize.css');
 
+@property --blue {
+   syntax: '<color>';
+   initial-value: rgba(38,72,236,1);
+   inherits: false;
+ }
+ 
+ @property --green {
+   syntax: '<color>';
+   initial-value: rgba(0,247,8,1);
+   inherits: false;
+ }
+
  body {
     font-family:'Poppins', sans-serif;
  }
@@ -65,6 +77,22 @@
 
  .feature__main h2 {
     margin-bottom: 10px;
+ }
+
+ .feature button {
+    width: 200px;
+    border-radius: 32px;
+    height: 64px;
+    background: var(--first-color);
+    border: 0;
+    color: white;
+    background: linear-gradient(90deg, var(--blue), var(--green));
+    transition: --blue 0.3s ease-in-out, --green 0.3s ease-in-out;
+ }
+
+ .feature button:hover {
+   --blue:  rgba(0,247,8,1);
+   --green: rgba(38,72,236,1);
  }
 
  .quote {
@@ -177,6 +205,9 @@
    .feature {
        margin-top: 20px;
        margin-bottom: 60px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
    }
 
    .feature__main {
@@ -193,11 +224,16 @@
 
    .feature__main p {
        font-size: 14px;
+       line-height: 25px;
    }
 
    .feature__main img {
        width: 90px;
        height: 90px;
+    }
+
+    .feature__premium {
+       margin: 30px;
     }
 
    .quote {
@@ -233,10 +269,12 @@
    .support__heading {
        font-size: 35px;
        max-width: 307px;
+       margin-bottom: 25px;
    }  
 
    .support__description {
        font-size: 16px;
        line-height: 25px;
+       margin-bottom: 40px;
    }
 }
