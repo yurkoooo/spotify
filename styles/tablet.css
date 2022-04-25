@@ -17,6 +17,10 @@
       font-size: 15px;
    }
 
+   .banner__main {
+      justify-content: space-evenly;
+   }
+
    .banner__mainElements {
       align-items: center;
    }
@@ -121,17 +125,109 @@
       line-height: 30px;
       margin-bottom: 45px;
    }
+
+   .footer__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer__main img {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      width: 100px;
+      height: 100px;
+   }
+
+   .footer__main form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .footer__main input {
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid #D0D0D0;
+      width: 320px;
+      height: 40px;
+      padding-left: 15px
+   }
+
+   .footer__main button {
+      width: 320px;
+      border: 0;
+      border-radius: 32px;
+      height: 45px;
+      background-color: #2A50C1;
+      color: white;
+   }
+
+   .footer__list {
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      border-bottom: 1px dashed black;
+      padding-bottom: 40px;
+      margin-top: 50px;
+   }
+
+   .footer__list ul {
+      display: none;
+   }
+
+   .footer__about {
+      display: flex;
+      flex-direction: column;
+      margin: 25px 0;
+      font-weight: bold;
+      align-items: center;
+   }
+
+   .footer__aboutCookies {
+      order: 1;
+   }
+
+   .footer__aboutPrivacy {
+      order: 2;
+   }
+
+   .footer__aboutSpotify {
+      order: 3;
+      text-transform: uppercase;
+   }
+
+   .footer__aboutSpotify::before {
+      content: '©';
+      width: 15px;
+      height: 15px;
+      padding-right: 5px;
+   }
+
+   .footer__icons {
+      display: flex;
+      justify-content: center;
+   }
+
+   .footer__icons img {
+      padding: 0 10px;
+   }
+
+   .footer__icons img:nth-child(1) {
+      padding-left: 0;
+   }
+
+   .footer__icons img:nth-child(4) {
+      padding-right: 0;
+   }
+
 }
 
 @media (min-width: 640px) {
      .container {
          margin: 0 auto;
-     }
-
-     .hdr__main {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
      }
 
      .hdr__menu {
@@ -170,7 +266,6 @@
      .banner__main {
         display: flex;
         align-items: center;
-        justify-content: space-between;
      }
 
      .banner__mainElements {

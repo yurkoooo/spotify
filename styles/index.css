@@ -215,169 +215,296 @@
    color: #E44590;
  }
 
+ .footer__main input {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #D0D0D0;
+    padding-left: 15px
+}
+
+.footer__main input::placeholder {
+    color: black; 
+}
+
+.footer__main button {
+    border: 2px solid #2A50C1;
+    border-radius: 32px;
+    background-color: #2A50C1;
+    color: white;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.footer__main button:hover {
+    background-color: white;
+    color: #2A50C1;
+    font-weight: bold;
+}
+
+ .footer__aboutSpotify::before {
+    content: '©';
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+ }
+
+ .footer__icons img {
+    cursor: pointer;
+ }
+
+ .footer__icons img:hover {
+    transform: scale(1.1);
+ }
+
  @media (max-width: 639px) {
 
    .hdr__menuBtnContainer {
-      display: flex;
+        display: flex;
   }
    .hdr__menu {
-      position: absolute;
-      top: 0;
-      margin-top: 70px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+        position: absolute;
+        top: 0;
+        margin-top: 70px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
   }
    #hdr__menuToggle ~ .hdr__menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
    #hdr__menuToggle:checked ~ .hdr__menu li {
-      align-items: center;
-      border: 1px solid;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        align-items: center;
+        border: 1px solid;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
    .hdr__menu li {
-       display: flex;
-       justify-content: center;
-       margin: 0;
-       padding: 0.5em 0;
-       width: 100%;
-       color: #EEF2FF;
-       background: linear-gradient(90deg, rgba(0,247,8,1) 10%, rgba(13,1,14,1) 92%);
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: #EEF2FF;
+        background: linear-gradient(90deg, rgba(0,247,8,1) 10%, rgba(13,1,14,1) 92%);
   }
 
    .hdr__logo {
-       height: 30px;
+        height: 30px;
    }
 
    .banner h1 {
-       font-size: 48px;
+        font-size: 48px;
    }
 
    .banner p {
-       font-size: 17px;
+        font-size: 17px;
    }
 
    .banner button {
-       width: 180px;
-       height: 60px;
+        width: 180px;
+        height: 60px;
    }
 
    .banner img {
-       height: 250px;
+        height: 250px;
     }
 
    .partners__mainImages {
-       display: flex;
-       justify-content: space-evenly;
+        display: flex;
+        justify-content: space-evenly;
     }
 
    .partners__apple {
-       width: 8vw;
+        width: 8vw;
    }
   
    .partners__amazon {
-       width: 22vw;
+        width: 22vw;
    }
   
    .partners__google {
-       width: 22vw;
+        width: 22vw;
    }
   
    .partners__walmart {
-       width: 31vw;
-       padding-left: 20px;
+        width: 31vw;
+        padding-left: 20px;
    }
 
    .video iframe {
-       width: 268px;
-       height: 181px;
-       margin-top: 55px;
-       margin-bottom: 55px;
+        width: 268px;
+        height: 181px;
+        margin-top: 55px;
+        margin-bottom: 55px;
    }
 
    .feature {
-       margin-top: 20px;
-       margin-bottom: 60px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
    }
 
    .feature__main {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
  
    }
 
    .feature__main h2 {
-       font-size: 26px;
+        font-size: 26px;
    }
 
    .feature__main p {
-       font-size: 14px;
-       line-height: 25px;
+        font-size: 14px;
+        line-height: 25px;
    }
 
    .feature__main img {
-       width: 90px;
-       height: 90px;
+        width: 90px;
+        height: 90px;
     }
 
     .feature__premium {
-       margin: 30px;
+        margin: 30px;
     }
 
    .quote {
-       padding-top: 60px;
-       padding-bottom: 20px;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
 
    .quote img {
-       margin-bottom: 30px;
-       width: 280px;
-       height: 280px;
-       order: 1;
+        margin-bottom: 30px;
+        width: 280px;
+        height: 280px;
+        order: 1;
     }
 
    .quote p {
-       font-size: 18px;
-       max-width: 442px;
-       order: 2;
+        font-size: 18px;
+        max-width: 442px;
+        order: 2;
     }
 
     .quote__description {
-       line-height: 25px;
-       text-align: center;
+        line-height: 25px;
+        text-align: center;
     }
 
    .quote__main {
-       flex-direction: column;
+        flex-direction: column;
    }
 
    .support {
-       padding: 50px 0;
+        padding: 50px 0;
    }
 
    .support__heading {
-       font-size: 35px;
-       max-width: 307px;
-       margin-bottom: 25px;
+        font-size: 35px;
+        max-width: 307px;
+        margin-bottom: 25px;
    }  
 
    .support__description {
-       font-size: 16px;
-       line-height: 25px;
-       margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 40px;
+   }
+
+   .footer__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .footer__main img {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 60px;
+   }
+
+   .footer__main form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+   }
+
+   .footer__main input {
+        width: 225px;
+        height: 40px;
+   }
+
+   .footer__main button {
+        width: 225px;
+        height: 45px;
+   }
+
+   .footer__list {
+        font-weight: bold;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .footer__list ul {
+       display: none;
+   }
+
+   .footer__about {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 25px;
+       font-weight: bold;
+       align-items: center;
+   }
+
+   .footer__aboutCookies {
+       order: 1;
+   }
+
+   .footer__aboutPrivacy {
+       order: 2;
+   }
+
+   .footer__aboutSpotify {
+       order: 3;
+       text-transform: uppercase;
+   }
+
+   .footer__aboutSpotify::before {
+       content: '©';
+       width: 15px;
+       height: 15px;
+       padding-right: 5px;
+   }
+
+   .footer__icons {
+       display: flex;
+       justify-content: center;
+   }
+
+   .footer__icons img {
+        padding: 0 10px;
+   }
+
+   .footer__icons img:nth-child(1) {
+        padding-left: 0;
+   }
+
+   .footer__icons img:nth-child(4) {
+        padding-right: 0;
    }
 }

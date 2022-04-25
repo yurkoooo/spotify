@@ -95,4 +95,23 @@
         line-height: 45px;
         margin-bottom: 35px;
     }
+
+    .footer__main img {
+        margin-bottom: 80px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .footer__main input {
+        height: 54px;
+        width: 320px;
+    }
+
+    .footer__main button {
+        height: 54px;
+        margin-left: 15px;
+        width: 130px;
+    }
 }
