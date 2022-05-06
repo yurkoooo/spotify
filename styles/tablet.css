@@ -1,6 +1,6 @@
 @media (min-width: 640px) and (max-width: 991px) {
    .container {
-      width: 650px;
+      width: 600px;
    }
 
    .hdr__logo {
@@ -18,7 +18,7 @@
    }
 
    .banner__main {
-      justify-content: space-evenly;
+      justify-content: space-between;
    }
 
    .banner__mainElements {
@@ -35,7 +35,7 @@
    }
 
    .banner img {
-      height: 245px;
+      height: 210px;
    }
 
    .partners__apple {
@@ -110,6 +110,11 @@
       font-size: 17px;
       padding-left: 15px;
    }
+
+   .quote__main p:after {
+      left: 18px;
+      top: 30px;
+   }
    
    .support {
       padding: 70px 0;
@@ -146,7 +151,7 @@
       flex-direction: column;
    }
 
-   .footer__main input {
+   .footer__input {
       margin-bottom: 20px;
       border-radius: 10px;
       border: 1px solid #D0D0D0;
@@ -167,10 +172,8 @@
    .footer__list {
       font-weight: bold;
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      border-bottom: 1px dashed black;
-      padding-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
       margin-top: 50px;
    }
 
@@ -238,7 +241,6 @@
         background: none;
         border: 0;
         cursor: pointer;
-        margin-right: 15px;
         transition: opacity 0.3s ease-in-out;
      }
 
@@ -277,42 +279,47 @@
          margin-bottom: 20px;
      }
 
-     .banner img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-     }
-
      .partners__main {
         display: flex;
         flex-direction: row;
         justify-content: center;
      }
 
-     .partners img {
-        padding-right: 70px;
+     .partners__apple,
+     .partners__amazon,
+     .partners__google {
+         padding-right: 70px;
+     }
+
+     .partners__walmart {
+         padding-right: 0;
      }
 
      .partners__mainImages {
-        display: flex;
-        justify-content: center;
+         display: flex;
+         justify-content: center;
+         align-items: self-end;
      }
 
      .feature {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
      }
 
      .feature__premium {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 35px;
+         display: flex;
+         justify-content: center;
+         margin-bottom: 35px;
      }
 
      .feature__main {
          display: flex;
          flex-direction: column;
          align-items: center;
+     }
+
+     .feature__main:nth-child(4) {
+         margin-right: 0;
      }
  }

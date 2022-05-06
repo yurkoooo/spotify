@@ -1,20 +1,14 @@
 @media (min-width: 1200px) {
     .container {
-        width: 1180px;
+        width: 1160px;
     }
     
     .hdr__logo {
         height: 44px;
     }
 
-    .hdr__signInBtn {
-        width: 180px;
-        height: 65px;
-        font-size: 21px;
-    }
-
     .hdr__signUpBtn {
-        font-size: 21px;
+        font-size: 17px;
     }
 
     .banner__mainElements h1 {
@@ -86,6 +80,11 @@
         font-size: 22px;
      }
 
+     .quote__main p:after {
+        left: 33px;
+        top: 40px;
+     }
+
     .support__heading {
         font-size: 60px;
      }
@@ -104,7 +103,7 @@
         font-size: 18px;
     }
 
-    .footer__main input {
+    .footer__input {
         height: 54px;
         width: 320px;
     }

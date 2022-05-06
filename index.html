@@ -18,8 +18,8 @@
                 <img src="./static/images/spotifyLogo.png" alt="spotify logo" class="hdr__logo">
                 <input id="hdr__menuToggle" type="checkbox">
                 <label class='hdr__menuBtnContainer' for="hdr__menuToggle">
-                <div class='hdr__menuBtn'></div>
-              </label>
+                    <div class='hdr__menuBtn'></div>
+                </label>
                 <ul class="hdr__menu">
                   <li class="hdr__signUpBtn">Sign Up</li>
                   <li class="hdr__signInBtn">Sign In</li>
@@ -34,7 +34,7 @@
                     <div class="banner__mainElements">
                         <h1>Listening is <br> <span>everything</span> </h1>
                         <p>Millions of songs. No credit card needed.</p>
-                        <button>GET SPOTIFY FREE</button>
+                        <button class="btn">GET SPOTIFY FREE</button>
                     </div>
                     <img src="./static/images/spotifyIcon.png" alt="spotify icon">
                 </div>
@@ -42,12 +42,14 @@
         </section>
         <section class="partners">
             <div class="partners__main container">
-                <div class="partners__mainImages">
-                    <img src="./static/images/apple.svg" alt="apple logo" class="partners__apple">
-                    <img src="./static/images/amazon.svg" alt="amazon logo" class="partners__amazon">
-                </div>
-                <img src="./static/images/google.svg" alt="google logo" class="partners__google">
-                <img src="./static/images/walmart.svg" alt="walmart logo" class="partners__walmart">
+                    <div class="partners__mainImages">
+                        <img src="./static/images/apple.svg" alt="apple logo" class="partners__apple">
+                        <img src="./static/images/amazon.svg" alt="amazon logo" class="partners__amazon">
+                    </div>
+                    <div class="partners__mainImages">
+                        <img src="./static/images/google.svg" alt="google logo" class="partners__google">
+                        <img src="./static/images/walmart.svg" alt="walmart logo" class="partners__walmart">
+                    </div>
             </div>
         </section>
         <section class="video">
@@ -58,7 +60,7 @@
                 <div class="feature__main">
                     <img src="./static/images/spotifyIconGreenBlack.webp" alt="spotify icon">
                     <h2>Individual</h2>
-                 <p>$4.99/month after offer period <br> 1 account</p>
+                    <p>$4.99/month after offer period <br> 1 account</p>
                 </div>
                 <div class="feature__main">
                     <img src="./static/images/spotifyIconGreenBlack.webp" alt="spotify icon">
@@ -76,7 +78,7 @@
                     <p>$2.49/month after offer period <br> 1 account</p>
                 </div>
             </div>
-            <button>More</button>
+            <button class="btn">More</button>
         </section>
         <section class="quote">
             <p class="quote__description">
@@ -93,7 +95,7 @@
             <p class="support__description">You can ask us questions,<br> 
             and we will be happy to answer you!
             </p>
-            <button>Support</button>
+            <button class="btn">Support</button>
         </section>
     <footer>
         <div class="container">
@@ -101,42 +103,44 @@
                 <div class="footer__main">
                     <img src="./static/images/spotifyIcon.png" alt="spotify icon">
                     <p>Updates right to your Inbox</p>
-                    <form action="#">
-                        <input type="text" placeholder="Email Adress">
-                        <button>Subscribe</button>
+                    <form action="#" class="footer__form">
+                        <input type="text" placeholder="Email Adress" class="footer__input" required>
+                        <button class="footer__btn">Subscribe</button>
                     </form>
+                    <p class="footer__successDescription">We will contact you soon!</p>
+                    <p class="footer__errorDescription">Not a valid email.</p>
                 </div>
                 <div class="footer__list">
                     <div class="footer__listElements">
-                        <p>Company</p>
-                            <ul>
-                                <li>About</li>
-                                <li>For the Record</li>
-                            </ul>
+                        <p><a href="#">Company</a></p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
                     </div>
                     <div class="footer__listElements"> 
-                        <p>Communities</p>
-                            <ul class="footer__listCommunity">
-                                <li>For Artists</li>
-                                <li>Developers</li>
-                                <li>Investors</li>
-                            </ul> 
+                        <p><a href="#">Communities</a></p>
+                        <ul class="footer__listCommunity">
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Investors</a></li>
+                        </ul> 
                     </div>
                     <div class="footer__listElements">        
-                        <p>Useful Links</p>
-                            <ul>
-                                <li>Support</li>
-                                <li>Web Player</li>
-                                <li>Free Mobile App</li>
-                            </ul>
+                        <p><a href="#">Useful Links</a></p>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Web Player</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                        </ul>
                     </div>      
                 </div>
             </div>
             <div class="footer__other">
                 <div class="footer__about">
-                    <p class="footer__aboutSpotify">Spotify 2022</p>
-                    <p class="footer__aboutPrivacy">Privacy policy</p>
-                    <p class="footer__aboutCookies">Cookies</p>
+                    <p class="footer__aboutSpotify"><a href="#">Spotify 2022</a></p>
+                    <p class="footer__aboutPrivacy"><a href="#">Privacy policy</a></p>
+                    <p class="footer__aboutCookies"><a href="#">Cookies</a></p>
                 </div>
                 <div class="footer__icons">
                     <img src="./static/images/facebook.svg" alt="facebook icon">
@@ -148,5 +152,6 @@
         </div>       
     </footer>    
     </main>
+<script src="index.js"></script>    
 </body>
 </html>

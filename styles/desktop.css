@@ -1,17 +1,11 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
-        width: 980px;
+        width: 950px;
     }
 
     .hdr__logo {
         height: 40px;
     }
-    
-    .hdr__signInBtn {
-        width: 150px;
-        height: 50px;
-        font-size: 17px;
-     }
 
      .hdr__signUpBtn {
         font-size: 17px;
@@ -82,6 +76,11 @@
         padding-left: 16px;
       }
 
+      .quote__main p:after {
+        left: 20px;
+        top: 35px;
+      }
+
       .support__heading {
         font-size: 50px;
       }
@@ -96,7 +95,7 @@
         max-width: 400px;
       }
 
-      .footer__main input {
+      .footer__input {
         width: 320px;
         height: 40px;
       }
@@ -112,6 +111,12 @@
 }
 
 @media (min-width: 992px) {
+
+    .hdr__signInBtn {
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+     }
     
     .banner__main {
         justify-content: space-between;
@@ -161,7 +166,7 @@
         height: 60px;
     }
 
-    .footer__main input::placeholder {
+    .footer__input::placeholder {
         font-size: 18px;
     }
 

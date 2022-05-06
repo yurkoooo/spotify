@@ -19,6 +19,17 @@
     font-family:'Poppins', sans-serif;
  }
 
+ a {
+     color: black;
+     text-decoration: none;
+    }
+
+ .btn {
+     border-radius: 32px;
+     color: white;
+     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+ }
+
  .hdr__menu {
     display: flex;
     flex-direction: row;
@@ -39,6 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 10px;
   }
   
  #hdr__menuToggle {
@@ -102,11 +114,9 @@
 
  .banner button {
     background-color: #E44590;
-    border-radius: 32px;
     border: 2px solid #E44590;
     color: white;
     margin-bottom: 30px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     font-weight: 800;
  }
 
@@ -122,6 +132,7 @@
  .partners {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
  .partners img {
@@ -183,6 +194,16 @@
    align-items: center;
  }
 
+ .quote__main p {
+   position: relative;
+ }
+
+ .quote__main p::after {
+   content: '★ ★ ★ ★ ★';
+   color: orange;
+   position: absolute;
+ }
+
  .support {
    display: flex;
    flex-direction: column;
@@ -200,13 +221,10 @@
  }
 
  .support button {
-   border-radius: 32px;
    width: 200px;
    height: 64px;
    border: 2px solid #E44590;
-   color: white;
    background-color: #E44590;
-   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
    font-size: 18px;
  }
 
@@ -215,29 +233,33 @@
    color: #E44590;
  }
 
- .footer__main input {
+ .footer__input {
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid #D0D0D0;
     padding-left: 15px
 }
 
-.footer__main input::placeholder {
+ .footer__input::placeholder {
     color: black; 
 }
 
 .footer__main button {
     border: 2px solid #2A50C1;
-    border-radius: 32px;
     background-color: #2A50C1;
+    border-radius: 32px;
     color: white;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
 .footer__main button:hover {
     background-color: white;
     color: #2A50C1;
     font-weight: bold;
+}
+
+.footer__aboutSpotify {
+    text-transform: uppercase;
 }
 
  .footer__aboutSpotify::before {
@@ -249,41 +271,82 @@
 
  .footer__icons img {
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
  }
 
  .footer__icons img:hover {
     transform: scale(1.1);
  }
 
+ .footer__error {
+    border: 2px solid red;
+    color: red;
+ }
+
+ .footer__error:focus {
+    border: 2px solid red;
+    color: red;
+}
+
+ .footer__success {
+    border: 2px solid green;
+    color: green;
+ }
+
+ .footer__success:focus {
+    border: 2px solid green;
+}
+
+ .footer__input:focus { 
+    outline: none;
+ }
+
+ .footer__successDescription { 
+    color: green;
+    display: none;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
+ }
+
+ .footer__errorDescription {
+    color: red;
+    display: none;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
+ }
+
  @media (max-width: 639px) {
 
    .hdr__menuBtnContainer {
         display: flex;
-  }
+    }
    .hdr__menu {
         position: absolute;
         top: 0;
-        margin-top: 70px;
+        margin-top: 78px;
         left: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
-  }
+    }
    #hdr__menuToggle ~ .hdr__menu li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
+    }
    #hdr__menuToggle:checked ~ .hdr__menu li {
         align-items: center;
         border: 1px solid;
+        cursor: pointer;
         height: 2.5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
+    }
    .hdr__menu li {
         display: flex;
         justify-content: center;
@@ -291,25 +354,25 @@
         padding: 0.5em 0;
         width: 100%;
         color: #EEF2FF;
-        background: linear-gradient(90deg, rgba(0,247,8,1) 10%, rgba(13,1,14,1) 92%);
-  }
+        background: darkslateblue;
+    }
 
    .hdr__logo {
         height: 30px;
-   }
+    }
 
    .banner h1 {
         font-size: 48px;
-   }
+    }
 
    .banner p {
         font-size: 17px;
-   }
+    }
 
    .banner button {
         width: 180px;
         height: 60px;
-   }
+    }
 
    .banner img {
         height: 250px;
@@ -317,32 +380,33 @@
 
    .partners__mainImages {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: self-end;
     }
 
    .partners__apple {
         width: 8vw;
-   }
+    }
   
    .partners__amazon {
         width: 22vw;
-   }
+    }
   
    .partners__google {
         width: 22vw;
-   }
+    }
   
    .partners__walmart {
         width: 31vw;
         padding-left: 20px;
-   }
+    }
 
    .video iframe {
         width: 268px;
         height: 181px;
         margin-top: 55px;
         margin-bottom: 55px;
-   }
+    }
 
    .feature {
         margin-top: 20px;
@@ -350,7 +414,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-   }
+    }
 
    .feature__main {
         display: flex;
@@ -358,16 +422,16 @@
         align-items: center;
         margin-top: 70px;
  
-   }
+    }
 
    .feature__main h2 {
         font-size: 26px;
-   }
+    }
 
    .feature__main p {
         font-size: 14px;
         line-height: 25px;
-   }
+    }
 
    .feature__main img {
         width: 90px;
@@ -403,53 +467,58 @@
 
    .quote__main {
         flex-direction: column;
-   }
+    }
+
+   .quote__main p:after {
+        left: 6px;
+        top: 25px;
+    }
 
    .support {
         padding: 50px 0;
-   }
+    }
 
    .support__heading {
         font-size: 35px;
         max-width: 307px;
         margin-bottom: 25px;
-   }  
+    }  
 
    .support__description {
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 40px;
-   }
+    }
 
    .footer__main {
         display: flex;
         flex-direction: column;
         align-items: center;
-   }
+    }
 
    .footer__main img {
         padding-top: 20px;
         margin-bottom: 20px;
         width: 60px;
         height: 60px;
-   }
+    }
 
    .footer__main form {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-   }
+    }
 
-   .footer__main input {
+   .footer__input {
         width: 225px;
         height: 40px;
-   }
+    }
 
    .footer__main button {
         width: 225px;
         height: 45px;
-   }
+    }
 
    .footer__list {
         font-weight: bold;
@@ -457,11 +526,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-   }
+    }
 
    .footer__list ul {
        display: none;
-   }
+    }
 
    .footer__about {
        display: flex;
@@ -469,42 +538,41 @@
        margin-bottom: 25px;
        font-weight: bold;
        align-items: center;
-   }
+    }
 
    .footer__aboutCookies {
        order: 1;
-   }
+    }
 
    .footer__aboutPrivacy {
        order: 2;
-   }
+    }
 
    .footer__aboutSpotify {
        order: 3;
-       text-transform: uppercase;
-   }
+    }
 
    .footer__aboutSpotify::before {
        content: '©';
        width: 15px;
        height: 15px;
        padding-right: 5px;
-   }
+    }
 
    .footer__icons {
        display: flex;
        justify-content: center;
-   }
+    }
 
    .footer__icons img {
         padding: 0 10px;
-   }
+    }
 
    .footer__icons img:nth-child(1) {
         padding-left: 0;
-   }
+    }
 
    .footer__icons img:nth-child(4) {
         padding-right: 0;
-   }
+    }
 }
