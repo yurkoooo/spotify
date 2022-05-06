@@ -108,6 +108,18 @@
       .footer__main img {
         margin-bottom: 20px;
     }
+
+      .footer__successDescription { 
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding-left: 90px;
+     }
+    
+       .footer__errorDescription {
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding-left: 90px;
+     }
 }
 
 @media (min-width: 992px) {
