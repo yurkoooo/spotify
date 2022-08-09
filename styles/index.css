@@ -468,6 +468,7 @@
    .quote__main p:after {
         left: 5px;
         top: 25px;
+        width: 100px;
     }
 
    .support {
